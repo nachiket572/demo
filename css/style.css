@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Sacramento', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nametxt {
+    color: rgba(255, 255, 255, 1);
+    padding: 400px 0px 350px;
+    font-family: 'Sacramento';
+    text-align: center;
+}
+
+.nametxt h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.nametxt h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.nav-item .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    transition: 0.5s;
+    transform-origin: center;
+    background-color: #FFF;
+}
+.nav-item .nav-link:hover {
+    font-weight: 900;
+}
+.nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-brand {
+    color: #FFF !important;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem !important;
+}
+
+.navbar-toggler {
+    background-color: #FFF !important;
+}
+
+.menu {
+    position: relative;
+    width: 90%
+    z-index: 9999;
+}
+.about {
+    background-color: #000;
+    color: #FFF;
+    padding: 100px 0px 60px;
+    height: 700px;
+}
+
+.about h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 35px 0;
+    text-align: center;
+}
+
+.about h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: 20px 0 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+
+}
+.about p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.setting {
+    margin-top: 80px;
+}
+
+.gallery .carousel-caption h4 {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.gallery .carousel-indicators li {
+    background-color: #808080 !important;
+}
+.card {
+  background-color: #000 !important;
+}
+
+.card h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  font-weight: bold !important;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+
+}
+
+.card h3 {
+  color: #FFF;
+  font-weight: 300;
+}
+
+.card label {
+  color: #FFF;
+}
+.card p {
+  color: #FFF;
+}
+.card i {
+  color: #FFF;
+}
+
+label.messageset {
+  margin-top: 15px;
+}
+.form-control {
+  background-color: transparent !important;
+  outline: transparent !important;
+}
+input {
+  color: #FFF !important;
+}
+textarea {
+  color: #FFF !important;
+}
+
+input[type=text]:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF;
+}
+input[type=email]:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF;
+}
+
+textarea:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF !important;
+}
+.btn-light {
+    font-weight: 500 !important;
+    transition: 0.5s;
+}
+.btn-light:hover {
+  border-color: #808080 !important;
+  background-color: #808080 !important;
+}
+.footer-copyright p {
+    text-align: center;
+    color: #000;
+}
+
+.fa-color {
+    color: #000;
+}
+@media (max-width: 575px) {
+  .about p {
+      margin-bottom: 50px;
+    }
+}
+@media (max-width: 992px) {
+  .card i {
+    margin-left: 70px;
+    }
+  }
+@media (max-width: 768px) {
+  .card i {
+      position: absolute;
+      right: 5px;
+          }
+  }
